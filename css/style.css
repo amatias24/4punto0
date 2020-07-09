@@ -1,29 +1,38 @@
 body
 {
     width:100%;
-    background-color:rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0) , rgb(89, 89, 255));
     display: flex;
     flex-wrap: wrap;
     margin:0;
+    font-family: sans-serif;
 }
 header{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: aqua;
-    height: 100px;
 
 }
 
+.encuesta-log
+{
+  width: 30%;
+  margin: auto;
+}
+
+.encuesta-log img
+{
+  width: 100%;
+  height: auto;
+}
 
 .encuesta
 {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    width: 60%;
+    margin-left:20%;
+    margin-right:20%;
     background-color: rgba(26, 0, 175, 0.466);
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255,0.6) , rgba(151, 151, 255,0.6));
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px;
