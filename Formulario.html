@@ -10,15 +10,31 @@
 </head>
 <body>
 <header class="encuesta-logo">
+    <img src="">
 </header>
 <form class="encuesta">
-<label>Nombre de la Empresa</label>
+<label>Correo</label>
+<input type="email" placeholder="Correo Electronico">
+<label>Nombre del negocio o proyecto</label>
 <input type="text" placeholder="Escribe tu respuesta">
+<label>Giro o breve descripcion de las actividades</label>
 <input type="text" placeholder="Escribe tu respuesta">
-<input type="text" placeholder="Escribe tu respuesta">
-<input type="text" placeholder="Escribe tu respuesta">
-<input type="text" placeholder="Escribe tu respuesta">
-<input type="text" placeholder="Escribe tu respuesta">
+<label>Cuentas con un logotipo</label>
+<label class="rtext"><input type="radio" value="Si" name="logo">Si<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="No" name="logo">No<span class="checkmark"></span></label>
+<label>Sector de edad que intentas acercarte</label>
+<label class="rtext"><input type="radio" value="Niño" name="sectoredad">Niño<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Jovenes" name="sectoredad">Jovenes<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Adultos" name="sectoredad">Adultos<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Adultos Mayores" name="sectoredad">Adultos Mayores<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Todos" name="sectoredad">Todos<span class="checkmark"></span></label>
+<label>Cuentas con un slogan</label>
+<label class="rtext"><input type="radio" value="Niño" name="slogan">Si<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Jovenes" name="slogan">No<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Adultos" name="slogan">Tal vez<span class="checkmark"></span></label>
+<label>Sube las imagenes de referencia para tu logo</label>
+<input type="file" name="file" id="file"  />
+<label for="file" class="btn-upload">Choose a file</label>
 </form>
     
 </body>
