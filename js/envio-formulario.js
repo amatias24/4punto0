@@ -6,6 +6,7 @@ function send_form()
     var log;
     var sec;
     var slo;
+    console.log("Aqui");
     for (var i = 0; i < logo.length; i++) {
       if (logo[i].type == "radio") {
         if(logo[i].checked == true)
@@ -41,7 +42,7 @@ function send_form()
 		url: 'php/envio-formulario.php',
 		type: 'post',
 		dataType: 'json',
-		data: {email: email,nombre: nombre,actividades: actividades,logo: log,sectoredad: sec,slogan: slo},
+		data: {email: email,nombre: nombre,actividades: actividades,logo: log,sectoredad: sec,slogan: slo,file:file},
 	})
 	.done(function(xx) {
 		if (xx.res == 1) {

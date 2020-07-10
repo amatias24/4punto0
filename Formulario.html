@@ -12,11 +12,11 @@
     <title>Formulario</title>
 
 </head>
-<body onload="change_background();">
+<body >
 <header>
 </header>
 <div class="encuesta-log">
-    <img src="img/logo-white.png">
+    <img src="img/logo-white.png" onsubmit="send_form();">
 </div>
 <form class="encuesta" id="encuesta">
 <label>Correo</label>
@@ -40,9 +40,9 @@
 <label class="rtext"><input type="radio" value="Tal vez" name="slogan">Tal vez<span class="checkmark"></span></label>
 <label>Sube las imagenes de referencia para tu logo</label>
 <input type="file" name="file" id="file"  />
-<label for="file" class="btn-upload">Choose a file</label>
+<label for="file" class="btn-upload">Subir Archivo</label><label class="t-upload">Maximo de archivo 25MB</label>
 <label></label>
-<input type="button" value="Enviar"  onsubmit="">
+<input type="submit" value="Enviar" >
 </form>
 <footer>
 

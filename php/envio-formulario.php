@@ -9,7 +9,8 @@ $mensaje="
     Actividades: $_POST[actividades]
     Logo: $_POST[logo]
     Sector de Edad: $_POST[sectoredad]
-    Slogan: $_POST[slogan]";
+    Slogan: $_POST[slogan]
+    Archivo: $_POST[file]";
 mail($destino,$asunto,$mensaje,$desde);
 
 ?>

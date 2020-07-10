@@ -5,7 +5,9 @@ body
     display: flex;
     flex-wrap: wrap;
     margin:0;
-    font-family: sans-serif;
+    font-family: sans-serif;  
+    font-size: 18px;
+    color: rgb(240, 240, 240);
 }
 header{
     width: 100%;
@@ -32,12 +34,11 @@ header{
     margin-left:20%;
     margin-right:20%;
     background-color: rgba(26, 0, 175, 0.466);
-    background-image: linear-gradient(to bottom right, rgba(255, 255, 255,0.6) , rgba(151, 151, 255,0.6));
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255,0.5) , rgba(151, 151, 255,0.5));
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px;
     padding: 3%;
-    font-size: 20px;
 }
 label
 {
@@ -66,19 +67,19 @@ input[type=text], select {
     box-sizing: border-box;
   }
 
-  input[type=button] {
+  input[type=submit] {
     width: 100%;
     background-color: #4d5eff;
     color: white;
     padding: 14px 20px;
+    font-size: 18px;
     margin: 8px 0;
-    font-size: 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
-  input[type=button]:hover {
+  input[type=submit]:hover {
     background-color: #3451f7;
   }
  
@@ -88,7 +89,6 @@ input[type=text], select {
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 20px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -152,17 +152,36 @@ input[type=text], select {
 
  .btn-upload
  {
-   color: white;
    height: 60px;
-   width: 30%;
+   width: 60%;
    background-color: #4d5eff;
-   border-radius: 5%;
-   font-size: 20px;
+   font-size: 18px;
    display: flex;
    justify-content: center;
    align-items: center;
  }
+
  .btn-upload:hover
  {
    background-color: #3451f7;
  }
+
+ .t-upload
+ {
+   margin-left: 0;
+   width: 40%;
+   height: 60px;
+   font-size: 14px;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+ }
+
+ @media screen and (max-width:800px) {
+  .encuesta
+  {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
