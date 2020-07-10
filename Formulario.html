@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script xmlns="http://www.w3.org/1999/xhtml" src="jquery/jquery-3.5.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="js/envio-formulario.js"></script>
+    <script src="js/update-body.js"></script>
+    <title>Formulario</title>
+
+</head>
+<body onload="change_background();">
+<header>
+</header>
+<div class="encuesta-log">
+    <img src="img/logo-white.png">
+</div>
+<form class="encuesta" id="encuesta">
+<label>Correo</label>
+<input type="email" placeholder="Correo Electronico" id="email" required name="email">
+<label>Nombre del negocio o proyecto</label>
+<input type="text" placeholder="Escribe tu respuesta" required id="nombre" name="nombre">
+<label>Giro o breve descripcion de las actividades</label>
+<input type="text" placeholder="Escribe tu respuesta" required id="actividades" name="actividades">
+<label>Cuentas con un logotipo</label>
+<label class="rtext"><input type="radio" value="Si" name="logo" required>Si<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="No" name="logo">No<span class="checkmark"></span></label>
+<label>Sector de edad que intentas acercarte</label>
+<label class="rtext"><input type="radio" value="Niño" name="sectoredad" required>Niño<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Jovenes" name="sectoredad">Jovenes<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Adultos" name="sectoredad">Adultos<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Adultos Mayores" name="sectoredad">Adultos Mayores<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Todos" name="sectoredad">Todos<span class="checkmark"></span></label>
+<label>Cuentas con un slogan</label>
+<label class="rtext"><input type="radio" value="Si" name="slogan" required>Si<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="No" name="slogan">No<span class="checkmark"></span></label>
+<label class="rtext"><input type="radio" value="Tal vez" name="slogan">Tal vez<span class="checkmark"></span></label>
+<label>Sube las imagenes de referencia para tu logo</label>
+<input type="file" name="file" id="file"  />
+<label for="file" class="btn-upload">Choose a file</label>
+<label></label>
+<input type="button" value="Enviar" onclick="send_form();">
+</form>
+<footer>
+
+</footer>
+</body>
+</html>
