@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
+.cf{
+	clear:both;
+	position:relative;
+	display:block;
+}
 body {
     background: #FFFFFA;
     width: 100%;
@@ -26,6 +30,8 @@ header nav {
 header nav ul {
     overflow: hidden;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -50,7 +56,6 @@ header nav ul li a:hover {
 section {
     padding: 20px;
 }
-
 @media screen and (max-width:800px) {
     header nav {
         width: 50%;
@@ -58,7 +63,7 @@ section {
         left: -100%;
         margin: 0;
         position: fixed;
-        background: rgba(2, 73, 89, 0.5);
+        background: rgba(2, 73, 89, 1);
     }
     header nav ul li {
         display: block;
@@ -73,6 +78,7 @@ section {
     .menu_bar .bt-menu {
         display: block;
         padding: 20px;
+        height: 80px;
         background: rgba(2, 73, 89, 1);
         color: #fff;
         text-decoration: none;
@@ -81,6 +87,9 @@ section {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+    }
+    .menu_bar .bt-menu p {
+        display: none;
     }
     .menu_bar span {
         float: right;
