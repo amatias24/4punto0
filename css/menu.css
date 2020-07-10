@@ -5,17 +5,18 @@
 
 body {
     background: #FFFFFA;
+    width: 100%;
+    margin: 0;
 }
 
 header {
     width: 100%;
+    margin: 0;
 }
 
 header nav {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    background: #024959;
+    width: 100%;
+    background:rgba(2, 73, 89, 1);
 }
 
 .menu_bar {
@@ -52,11 +53,12 @@ section {
 
 @media screen and (max-width:800px) {
     header nav {
-        width: 100%;
+        width: 50%;
         height: 100%;
         left: -100%;
         margin: 0;
-        position: fixed;
+        position: fixed;   
+        background:rgba(2, 73, 89, 0.5);
     }
     header nav ul li {
         display: block;
@@ -71,7 +73,7 @@ section {
     .menu_bar .bt-menu {
         display: block;
         padding: 20px;
-        background: #024959;
+        background:rgba(2, 73, 89, 1);
         color: #fff;
         text-decoration: none;
         font-weight: bold;
