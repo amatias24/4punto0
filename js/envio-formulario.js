@@ -42,7 +42,7 @@ function send_form()
 		url: 'php/envio-formulario.php',
 		type: 'post',
 		dataType: 'json',
-		data: {email: email,nombre: nombre,actividades: actividades,logo: log,sectoredad: sec,slogan: slo,file:file},
+		data: {email: email,nombre: nombre,actividades: actividades,logo: log,sectoredad: sec,slogan: slo,file: file},
 	})
 	.done(function(xx) {
 		if (xx.res == 1) {
