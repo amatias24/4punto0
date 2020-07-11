@@ -37,12 +37,12 @@ function send_form()
       var email=document.getElementById("email").value;
       var nombre=document.getElementById("nombre").value;
       var actividades=document.getElementById("actividades").value;
-      var file=document.getElementById("file").value;
+      var file="cd";//document.getElementById("file").value;
 	$.ajax({
 		url: 'php/envio-formulario.php',
 		type: 'post',
 		dataType: 'json',
-		data: {email: email,nombre: nombre,actividades: actividades,logo: log,sectoredad: sec,slogan: slo,file:"ok"},
+		data: {email: email,nombre: nombre,actividades: actividades,logo: log,sectoredad: sec,slogan: slo,file:file},
 	})
 	.done(function(xx) {
 		if (xx.res == 1) {
