@@ -232,6 +232,7 @@ footer{
 }
 .rason i{
     font-size: 60px;
+    color: blue;
 }
 .imageval{
     padding-top: 10px;
@@ -313,14 +314,11 @@ footer{
     .about{
         width: 100%;
         margin: 0;
-        float: left;
         border: 0px solid rgba(255,255,255,0.1);
         padding-bottom: 20px;
     }
     .val{
-        height: auto;
         display: block;
-        overflow: visible;
     }
     .image-principal{
         background-image: url(../img/bg-about-respon.jpg);
@@ -352,10 +350,10 @@ footer{
         padding-left: 0;
     }
     .container-about{
-        height: 300px;
+        height: 550px;
     }
-    .about:hover .container-about{
-        max-height: 450px;
+    .about .container-about{
+        height: 450px;
     }
 
 }
