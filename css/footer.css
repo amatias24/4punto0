@@ -9,3 +9,12 @@ footer {
     width: 100%;
     color: white;
 }
+
+.container-all {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container-body {
+    display: flex;
+}
