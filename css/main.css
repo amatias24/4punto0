@@ -24,7 +24,9 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-
+h1, h2, h3, h4, p {
+    text-align: center;
+}
 header {
     width: 100%;
     margin: 0;
@@ -64,7 +66,6 @@ header nav ul li span {
 header nav ul li a:hover {
     background: #037E8C;
 }
-
 
 .principal-image img
 {
@@ -131,10 +132,110 @@ footer{
     margin: 0;
     width: 100%;
 }
-
-
-
-
+/* ==================================================
+ About
+================================================== */
+.about-section{
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
+}
+.about-section p{
+    font-size: 23px;
+    line-height: 30px;
+    margin-top: 0;
+    padding: 0 60px;
+}
+.about{
+    width: 25%;
+    margin: 3.2%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    border: 10px solid rgba(255,255,255,0.1);
+    background: rgba(0, 113, 189, 0.61);
+}
+.val{
+    display: block;
+    text-align: center;
+}
+.image-principal{
+    width: 100%;
+    flex-wrap: wrap;
+    background-image: url(../img/bg-about.jpg);
+    height: 160px;
+}
+.image-principal h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+.about-section h2{
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+    
+}
+.container-about{
+    max-height: 50px;
+    overflow:hidden;
+    transition:all 1s ease-in 0s;
+	-o-transition:all 1s ease-in 0s;
+	-ms-transition:all 1s ease-in 0s;
+	-moz-transition:all 1s ease-in 0s;
+	-khtml-transition:all 1s ease-in 0s;
+	-webkit-transition:all 1s ease-in 0s;
+}
+.about:hover .container-about{
+    max-height: 450px;
+}
+#header{
+    color: #fff;
+}
+.servicios{
+    width: 30%;
+    padding-left: 3%;
+    display: flex;
+    float: left;
+    justify-content: center;
+}
+.serv{
+    display: block;
+    text-align: center;
+}
+.descripcion{
+    width: 49%;
+    padding-left: 2%;
+    display: block;
+    float: left;
+    justify-content: center;
+}
+#valor{
+    background-image: url(../img/bg-val.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #0071bd;
+}
+.why{
+    width: 22%;
+    padding-left: 3%;
+    display: flex;
+    float: left;
+    justify-content: center;
+}
+.rason{
+    display: block;
+    text-align: center;
+}
+.rason i{
+    font-size: 60px;
+}
+.imageval{
+    padding-top: 10px;
+}
 @media screen and (max-width:800px) {
 
     header{
@@ -184,7 +285,6 @@ footer{
         display: block;
         margin: auto;
     }
-
     .container-image  img
     {
     width: 100%;
@@ -202,7 +302,60 @@ footer{
     margin: 0;
     width: 100%;
     }
-
-
+    /* ==================================================
+     About
+    ================================================== */
+    .about-section{
+        width: 100%;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+    .about{
+        width: 100%;
+        margin: 0;
+        float: left;
+        border: 0px solid rgba(255,255,255,0.1);
+        padding-bottom: 20px;
+    }
+    .val{
+        height: auto;
+        display: block;
+        overflow: visible;
+    }
+    .image-principal{
+        background-image: url(../img/bg-about-respon.jpg);
+        height: 160px;
+    }
+    .image-principal h1{
+        text-align: center;
+        padding-top: 60px;
+    }
+    .img-about img{
+        width: 90%;
+    }
+    .servicios{
+        width: 50%;
+        float: left;
+        padding-left: 0;
+    }
+    .about-section p, .descripcion{
+        padding: 0px;
+    }
+    .descripcion{
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+    .why{
+        width: 50%;
+        float: left;
+        padding-left: 0;
+    }
+    .container-about{
+        height: 300px;
+    }
+    .about:hover .container-about{
+        max-height: 450px;
+    }
 
 }
