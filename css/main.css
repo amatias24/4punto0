@@ -312,8 +312,10 @@ footer{
         padding-bottom: 40px;
     }
     .about{
-        width: 100%;
-        margin: 0;
+        display: block;
+        pointer-events: none;
+        height: 450px;
+        width: 90%;
         border: 0px solid rgba(255,255,255,0.1);
         padding-bottom: 20px;
     }
@@ -355,5 +357,7 @@ footer{
     .about .container-about{
         height: 450px;
     }
-
+    .container-about{
+        overflow: visible;
+    }
 }
