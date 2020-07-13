@@ -18,3 +18,7 @@ footer {
 .container-body {
     display: flex;
 }
+
+.columna1 {
+    max-width: 400px;
+}
