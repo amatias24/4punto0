@@ -645,7 +645,7 @@ body {
     position: relative;
 }
 
-.slider ul li {
+.slider li ul {
     width: 100%;
 }
 
@@ -680,6 +680,16 @@ body {
 
 .pagination {
     position: absolute;
+    top: 102%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li {
+    font-size: 20px;
+    margin: 2px 5px;
+    color: #858585;
+    cursor: pointer;
 }
 
 .left,
