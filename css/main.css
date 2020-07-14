@@ -682,12 +682,21 @@ body {
     position: absolute;
 }
 
-.left .right {
+.left,
+.right {
     position: absolute;
     top: 0;
     height: 100%;
     display: flex;
     align-items: center;
     color: #fff;
-    font-size: 40px;
+    font-size: 35px;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
 }
