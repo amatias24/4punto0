@@ -308,9 +308,9 @@ footer{
     margin: 0;
     width: 100%;
     }
-    /* ==================================================
+/* ==================================================
      About responsive
-    ================================================== */
+================================================== */
     .about-section{
         width: 100%;
         flex-wrap: wrap;
@@ -366,12 +366,6 @@ footer{
 /* ==================================================
      footer 
 ================================================== */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 footer {
     width: 100%;
     color: white;
@@ -382,6 +376,7 @@ footer {
     max-width: 1200px;
     margin: auto;
     padding: 40px;
+    box-sizing: border-box;
 }
 
 .container-body {
