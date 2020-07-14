@@ -14,16 +14,16 @@ footer {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 60px;
+    padding: 40px;
 }
 
 .container-body {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .columna1 {
-    max-width: 800px;
+    max-width: 400px;
 }
 
 .columna1 h1 {
@@ -37,7 +37,7 @@ footer {
 }
 
 .columna2 {
-    max-width: 800px;
+    max-width: 400px;
 }
 
 .columna2 h1 {
@@ -82,4 +82,8 @@ footer {
     margin-left: 20px;
     max-width: 140px;
     margin-top: 10px;
+}
+
+.container-footer {
+    width: 100px;
 }
