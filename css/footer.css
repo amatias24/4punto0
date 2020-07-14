@@ -12,7 +12,7 @@ footer {
 
 .container-all {
     width: 100%;
-    max-width: 1200px;
+    max-width: 2400px;
     margin: auto;
     padding: 40px;
 }
@@ -23,7 +23,7 @@ footer {
 }
 
 .columna1 {
-    max-width: 400px;
+    max-width: 800px;
 }
 
 .columna1 h1 {
@@ -35,7 +35,7 @@ footer {
 }
 
 .columna2 {
-    max-width: 400px;
+    max-width: 800px;
 }
 
 .columna2 h1 {
@@ -54,12 +54,12 @@ footer {
 
 .row label {
     margin-top: 10 px;
-    margin-left: 20 px;
+    margin-left: 50 px;
     color: white;
 }
 
 .columna3 {
-    max-width: 400px;
+    max-width: 800px;
 }
 
 .columna3 h1 {
@@ -68,4 +68,14 @@ footer {
 
 .row2 {
     margin-top: 20px;
+    display: flex;
+}
+
+.row2 img {
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label {
+    margin-left: 20px;
 }
