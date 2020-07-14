@@ -34,7 +34,7 @@ header {
 
 header nav {
     width: 100%;
-    background: rgba(2, 73, 89, 1);
+    background: #0071bd;
 }
 
 .menu_bar {
@@ -64,7 +64,7 @@ header nav ul li span {
 }
 
 header nav ul li a:hover {
-    background: #037E8C;
+    background: #0071bd;
 }
 
 .principal-image img
@@ -87,7 +87,7 @@ footer{
     width: 100%;
     padding-top: 80px;
     margin-top: 5%;
-    background-color: #037E8C;
+    background-color: #0071bd;
     height: auto;
 }
 
@@ -144,10 +144,9 @@ footer{
     font-size: 23px;
     line-height: 30px;
     margin-top: 0;
-    padding: 0 60px;
 }
 .about{
-    width: 25%;
+    width: 24.3%;
     margin: 3.2%;
     display: flex;
     float: left;
@@ -205,11 +204,14 @@ footer{
     text-align: center;
 }
 .descripcion{
-    width: 49%;
+    width: 45%;
     padding-left: 2%;
     display: block;
     float: left;
     justify-content: center;
+}
+.descripcion img{
+    width: auto;
 }
 #valor{
     background-image: url(../img/bg-val.jpg);
@@ -221,7 +223,7 @@ footer{
 }
 .why{
     width: 22%;
-    padding-left: 3%;
+    padding-left: 2%;
     display: flex;
     float: left;
     justify-content: center;
@@ -232,10 +234,13 @@ footer{
 }
 .rason i{
     font-size: 60px;
-    color: blue;
+    color: #0071bd;
 }
 .imageval{
     padding-top: 10px;
+}
+.container-why{
+    padding: 15px;
 }
 @media screen and (max-width:800px) {
 
@@ -315,7 +320,7 @@ footer{
         display: block;
         pointer-events: none;
         height: 450px;
-        width: 90%;
+        width: 95%;
         border: 0px solid rgba(255,255,255,0.1);
         padding-bottom: 20px;
     }
@@ -329,9 +334,6 @@ footer{
     .image-principal h1{
         text-align: center;
         padding-top: 60px;
-    }
-    .img-about img{
-        width: 90%;
     }
     .servicios{
         width: 50%;
