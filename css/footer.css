@@ -12,14 +12,14 @@ footer {
 
 .container-all {
     width: 100%;
-    max-width: 2400px;
+    max-width: 1200px;
     margin: auto;
-    padding: 40px;
+    padding: 60px;
 }
 
 .container-body {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .columna1 {
@@ -32,6 +32,8 @@ footer {
 
 .columna1 p {
     font-size: 18px;
+    text-align: justify;
+    text-justify: inter-palabra;
 }
 
 .columna2 {
@@ -53,8 +55,8 @@ footer {
 }
 
 .row label {
-    margin-top: 10 px;
-    margin-left: 50 px;
+    margin-top: 10px;
+    margin-left: 20px;
     color: white;
 }
 
@@ -78,4 +80,6 @@ footer {
 
 .row2 label {
     margin-left: 20px;
+    max-width: 140px;
+    margin-top: 10px;
 }
