@@ -1,22 +1,27 @@
 @charset "utf-8";
+
 /* CSS Document */
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 body {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	font-family: 'Roboto', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
-.cf{
-	clear:both;
-	position:relative;
-	display:block;
+
+.cf {
+    clear: both;
+    position: relative;
+    display: block;
 }
+
 body {
     background: #FFFFFA;
     width: 100%;
@@ -65,9 +70,7 @@ header nav ul li a:hover {
     background: #0071bd;
 }
 
-
-.principal-image img
-{
+.principal-image img {
     width: 100%;
     height: auto;
     margin: 0;
@@ -77,12 +80,14 @@ section {
     width: 100%;
     flex-wrap: wrap;
 }
+
 section p {
     width: 80%;
     margin: auto;
     text-align: justify;
 }
-footer{
+
+footer {
     width: 100%;
     padding-top: 80px;
     margin-top: 5%;
@@ -90,129 +95,138 @@ footer{
     height: auto;
 }
 
-.container-info
-{
-    margin-top:5%;
+.container-info {
+    margin-top: 5%;
 }
 
-.container-image
-{
-    
-    margin-top:5%;
+.container-image {
+    margin-top: 5%;
 }
 
-.container-image
-{
+.container-image {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
 }
-.container-image 
-{
+
+.container-image {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.container-image  img
-{
+.container-image img {
     width: 40%;
     height: auto;
 }
 
-.container-image .text-image
-{
+.container-image .text-image {
     width: 50%;
     margin-left: 10%;
 }
 
-.container-image .text-image *
-{
+.container-image .text-image * {
     margin: 0;
     width: 100%;
 }
+
+
 /* ==================================================
  About
 ================================================== */
-.about-section{
+
+.about-section {
     width: 100%;
     flex-wrap: wrap;
     padding-bottom: 80px;
 }
-.about-section p{
+
+.about-section p {
     font-size: 23px;
     line-height: 30px;
     margin-top: 0;
 }
-.about{
+
+.about {
     width: 24.3%;
     margin: 3.2%;
     display: flex;
     float: left;
     justify-content: center;
-    border: 10px solid rgba(255,255,255,0.1);
+    border: 10px solid rgba(255, 255, 255, 0.1);
     background: rgba(0, 113, 189, 0.61);
 }
-.val{
+
+.val {
     display: block;
     text-align: center;
 }
-.image-principal{
+
+.image-principal {
     width: 100%;
     flex-wrap: wrap;
     background-image: url(../img/bg-about.jpg);
     height: 160px;
 }
-.image-principal h1{
+
+.image-principal h1 {
     color: #fff;
     text-align: center;
     padding-top: 30px;
 }
-.about-section h2{
+
+.about-section h2 {
     color: #000;
     text-align: center;
     font-size: 35px;
     line-height: 35px;
-    
 }
-.container-about{
+
+.container-about {
     max-height: 50px;
-    overflow:hidden;
-    transition:all 1s ease-in 0s;
-	-o-transition:all 1s ease-in 0s;
-	-ms-transition:all 1s ease-in 0s;
-	-moz-transition:all 1s ease-in 0s;
-	-khtml-transition:all 1s ease-in 0s;
-	-webkit-transition:all 1s ease-in 0s;
+    overflow: hidden;
+    transition: all 1s ease-in 0s;
+    -o-transition: all 1s ease-in 0s;
+    -ms-transition: all 1s ease-in 0s;
+    -moz-transition: all 1s ease-in 0s;
+    -khtml-transition: all 1s ease-in 0s;
+    -webkit-transition: all 1s ease-in 0s;
 }
-.about:hover .container-about{
+
+.about:hover .container-about {
     max-height: 450px;
 }
-#header{
+
+#header {
     color: #fff;
 }
-.servicios{
+
+.servicios {
     width: 30%;
     padding-left: 3%;
     display: flex;
     float: left;
     justify-content: center;
 }
-.serv{
+
+.serv {
     display: block;
     text-align: center;
 }
-.descripcion{
+
+.descripcion {
     width: 45%;
     padding-left: 2%;
     display: block;
     float: left;
     justify-content: center;
 }
-.descripcion img{
+
+.descripcion img {
     width: 450px;
 }
-#valor{
+
+#valor {
     background-image: url(../img/bg-val.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -220,33 +234,39 @@ footer{
     background-size: cover;
     background-color: #0071bd;
 }
-.why{
+
+.why {
     width: 22%;
     padding-left: 2%;
     display: flex;
     float: left;
     justify-content: center;
 }
-.rason{
+
+.rason {
     display: block;
     text-align: center;
 }
-.rason i{
+
+.rason i {
     font-size: 60px;
     color: #0071bd;
 }
-.imageval{
+
+.imageval {
     padding-top: 10px;
 }
-.container-why{
+
+.container-why {
     padding: 15px;
 }
+
 
 /* ==================================================
  Servicios
 ================================================== */
-.image-services
-{
+
+.image-services {
     width: 100%;
     background-image: url("../img/mt.jpg");
     background-repeat: no-repeat;
@@ -255,8 +275,7 @@ footer{
     margin: 0;
 }
 
-.image-text 
-{
+.image-text {
     width: 100%;
     background-color: rgba(0, 17, 255, 0.6);
     margin: 0;
@@ -264,77 +283,74 @@ footer{
     align-items: center;
 }
 
-.image-text *
-{
+.image-text * {
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
     text-align: center;
     padding-top: 10%;
-    
 }
-.image-text h1
-{
+
+.image-text h1 {
     font-size: 60px;
 }
 
-.image-text p
-{
+.image-text p {
     padding-bottom: 5%;
     font-size: 30px;
 }
-.container-services
-{
+
+.container-services {
     background-image: url("../img/mt.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    width: 100%; 
+    width: 100%;
     margin: 0;
     margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
 }
-.container-services *
-{
+
+.container-services * {
     margin: 0;
     color: white;
 }
-.servicio1
-{
+
+.servicio1 {
     width: 25%;
     background-color: rgba(255, 187, 42, 0.6);
 }
-.servicio2
-{
+
+.servicio2 {
     width: 25%;
     background-color: rgba(42, 255, 60, 0.6);
 }
-.servicio3
-{
+
+.servicio3 {
     width: 25%;
     background-color: rgba(188, 42, 255, 0.6);
 }
-.servicio4
-{
+
+.servicio4 {
     width: 25%;
     background-color: rgba(255, 42, 42, 0.6);
 }
-.container-services div img{
+
+.container-services div img {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
     height: auto;
     padding-bottom: 5%;
 }
-.container-services div h1{
-    
+
+.container-services div h1 {
     text-align: center;
 }
 
 @media screen and (max-width:800px) {
-
-    header{
+    header {
         padding-bottom: 80px;
     }
     header nav {
@@ -381,139 +397,118 @@ footer{
         display: block;
         margin: auto;
     }
-
-    .container-image  img
-    {
-    width: 100%;
-    height: auto;
+    .container-image img {
+        width: 100%;
+        height: auto;
     }
-
-    .container-image .text-image
-    {
-    width: 100%;
-    margin: 0;
+    .container-image .text-image {
+        width: 100%;
+        margin: 0;
     }
-
-    .container-image .text-image *
-    {
-    margin: 0;
-    width: 100%;
+    .container-image .text-image * {
+        margin: 0;
+        width: 100%;
     }
-/* ==================================================
+    /* ==================================================
      About responsive
 ================================================== */
-    .about-section{
+    .about-section {
         width: 100%;
         flex-wrap: wrap;
         padding-bottom: 40px;
     }
-    .about{
+    .about {
         display: block;
         pointer-events: none;
         height: 490px;
         width: 95%;
-        border: 0px solid rgba(255,255,255,0.1);
+        border: 0px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 20px;
     }
-    .val{
+    .val {
         display: block;
     }
-    .image-principal{
+    .image-principal {
         background-image: url(../img/bg-about-respon.jpg);
         height: 160px;
     }
-    .image-principal h1{
+    .image-principal h1 {
         text-align: center;
         padding-top: 60px;
     }
-    .servicios{
+    .servicios {
         width: 50%;
         float: left;
         padding-left: 0;
     }
-    .about-section p, .descripcion{
+    .about-section p,
+    .descripcion {
         padding: 0px;
     }
-    .descripcion{
+    .descripcion {
         width: 100%;
         display: block;
         justify-content: center;
     }
-    .why{
+    .why {
         width: 50%;
         float: left;
         padding-left: 0;
     }
-    .container-about{
+    .container-about {
         height: 550px;
     }
-    .about .container-about{
+    .about .container-about {
         height: 450px;
     }
-    .container-about{
+    .container-about {
         overflow: visible;
     }
-
-
-
-/* ==================================================
+    /* ==================================================
  Servicios
 ================================================== */
-.image-services
-{
-    background-size: cover;
-    margin: 0;
+    .image-services {
+        background-size: cover;
+        margin: 0;
+    }
+    .image-text * {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .image-text h1 {
+        font-size: 40px;
+    }
+    .image-text p {
+        padding-bottom: 5%;
+        font-size: 30px;
+    }
+    .container-services {
+        background-size: cover;
+    }
+    .container-services div {
+        width: 100%;
+    }
+    .container-services div img {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        height: auto;
+    }
 }
-
-.image-text *
-{
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-    text-align: center;
-    padding-top: 5%;
-    
-}
-.image-text h1
-{
-    font-size: 40px;
-}
-
-.image-text p
-{
-    padding-bottom: 5%;
-    font-size: 30px;
-}
-
-.container-services 
-{
-background-size: cover;
-
-}
-
-.container-services div
-{
-    width: 100%;
-}
-.container-services div img{
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    height: auto;
-}
-
-
-}
-
 
 
 /* ==================================================
      footer Dany esto en cual va no lo metiste en ningun media
 ================================================== */
+
 footer {
     width: 100%;
     color: white;
 }
+
 .container-all {
     width: 100%;
     max-width: 1200px;
@@ -629,4 +624,47 @@ footer {
     .columna3 {
         margin-top: 40px;
     }
+}
+
+
+/* ==================================================
+ SlideShow
+================================================== */
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    font-family: Open sans;
+}
+
+.slideshow {
+    width: 100%;
+    position: relative;
+}
+
+.slider ul li {
+    width: 100%;
+}
+
+.slider li img {
+    width: 100%;
+}
+
+.slider caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.pagination {
+    position: absolute;
+}
+
+.left .right {
+    position: absolute;
 }
