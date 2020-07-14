@@ -660,10 +660,11 @@ body {
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #fff;
     z-index: 1;
 }
 
