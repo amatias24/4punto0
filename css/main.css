@@ -659,6 +659,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
+    padding: 15px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -668,10 +669,25 @@ body {
     z-index: 1;
 }
 
+.slider .caption h1 {
+    font-size: 50px;
+}
+
+.slider .caption p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
 .pagination {
     position: absolute;
 }
 
 .left .right {
     position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
 }
