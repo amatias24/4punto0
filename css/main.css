@@ -131,12 +131,6 @@ footer{
     margin: 0;
     width: 100%;
 }
-<<<<<<< HEAD
-
-
-
-
-=======
 /* ==================================================
  About
 ================================================== */
@@ -247,7 +241,97 @@ footer{
 .container-why{
     padding: 15px;
 }
->>>>>>> 7f53ececd6cf581012281ce49868fc9fe8e5d401
+
+/* ==================================================
+ Servicios
+================================================== */
+.image-services
+{
+    width: 100%;
+    background-image: url("../img/mt.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    margin: 0;
+}
+
+.image-text 
+{
+    width: 100%;
+    background-color: rgba(0, 17, 255, 0.6);
+    margin: 0;
+    color: white;
+    align-items: center;
+}
+
+.image-text *
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+    padding-top: 10%;
+    
+}
+.image-text h1
+{
+    font-size: 60px;
+}
+
+.image-text p
+{
+    padding-bottom: 5%;
+    font-size: 30px;
+}
+.container-services
+{
+    background-image: url("../img/mt.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%; 
+    margin: 0;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-services *
+{
+    margin: 0;
+    color: white;
+}
+.servicio1
+{
+    width: 25%;
+    background-color: rgba(255, 187, 42, 0.6);
+}
+.servicio2
+{
+    width: 25%;
+    background-color: rgba(42, 255, 60, 0.6);
+}
+.servicio3
+{
+    width: 25%;
+    background-color: rgba(188, 42, 255, 0.6);
+}
+.servicio4
+{
+    width: 25%;
+    background-color: rgba(255, 42, 42, 0.6);
+}
+.container-services div img{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: auto;
+    padding-bottom: 5%;
+}
+.container-services div h1{
+    
+    text-align: center;
+}
+
 @media screen and (max-width:800px) {
 
     header{
@@ -315,10 +399,6 @@ footer{
     margin: 0;
     width: 100%;
     }
-<<<<<<< HEAD
-
-
-=======
 /* ==================================================
      About responsive
 ================================================== */
@@ -373,16 +453,67 @@ footer{
     .container-about{
         overflow: visible;
     }
-}
+
+
+
 /* ==================================================
-     footer 
+ Servicios
+================================================== */
+.image-services
+{
+    background-size: cover;
+    margin: 0;
+}
+
+.image-text *
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+    padding-top: 5%;
+    
+}
+.image-text h1
+{
+    font-size: 40px;
+}
+
+.image-text p
+{
+    padding-bottom: 5%;
+    font-size: 30px;
+}
+
+.container-services 
+{
+background-size: cover;
+
+}
+
+.container-services div
+{
+    width: 100%;
+}
+.container-services div img{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: auto;
+}
+
+
+}
+
+
+
+/* ==================================================
+     footer Dany esto en cual va no lo metiste en ningun media
 ================================================== */
 footer {
     width: 100%;
     color: white;
 }
->>>>>>> 7f53ececd6cf581012281ce49868fc9fe8e5d401
-
 .container-all {
     width: 100%;
     max-width: 1200px;
