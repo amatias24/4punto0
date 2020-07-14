@@ -210,7 +210,7 @@ footer{
     justify-content: center;
 }
 .descripcion img{
-    width: auto;
+    width: 450px;
 }
 #valor{
     background-image: url(../img/bg-val.jpg);
