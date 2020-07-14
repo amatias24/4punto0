@@ -69,7 +69,7 @@ header nav ul li span {
 }
 
 header nav ul li a:hover {
-    background: #0071bd;
+    background: #0065a8;
 }
 
 .principal-image img {
@@ -339,6 +339,23 @@ footer {
     background-color: rgba(255, 42, 42, 0.6);
 }
 
+.servicio1:hover {
+    background-color: rgba(255, 187, 42, 0.8);
+}
+
+.servicio2:hover {
+    background-color: rgba(42, 255, 60, 0.8);
+}
+
+.servicio3:hover {
+    background-color: rgba(188, 42, 255, 0.8);
+}
+
+.servicio4:hover {
+    background-color: rgba(255, 42, 42, 0.8);
+}
+
+
 .container-services div img {
     width: 70%;
     margin-left: 15%;
@@ -348,6 +365,12 @@ footer {
 }
 
 .container-services div h1 {
+    text-align: center;
+}
+
+.container-services div p {
+    width: 100%;
+    margin:0;
     text-align: center;
 }
 
@@ -361,7 +384,7 @@ footer {
         left: -100%;
         margin: 0;
         position: fixed;
-        background: rgba(2, 73, 89, 1);
+        background: #0071bd;
     }
     header nav ul li {
         display: block;
@@ -378,7 +401,7 @@ footer {
         display: block;
         padding: 20px;
         height: 80px;
-        background: rgba(2, 73, 89, 1);
+        background: #0071bd;
         color: #fff;
         text-decoration: none;
         font-weight: bold;
@@ -396,8 +419,9 @@ footer {
     }
     .logo {
         width: 50%;
-        display: block;
-        margin: auto;
+        align-items: center;
+        position: relative;
+        padding-bottom: 20px;
     }
     .container-image img {
         width: 100%;
