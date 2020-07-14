@@ -645,8 +645,13 @@ body {
     position: relative;
 }
 
-.slider li ul {
+.slider li,
+ul {
     width: 100%;
+}
+
+.slider li {
+    overflow: hidden;
 }
 
 .slider li img {
@@ -681,6 +686,21 @@ body {
 .pagination {
     position: absolute;
     top: 102%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li {
+    font-size: 20px;
+    margin: 2px 5px;
+    color: #858585;
+    cursor: pointer;
+}
+
+.pagination {
+    position: absolute;
+    top: 102%;
     display: flex;
     justify-content: center;
 }
@@ -701,6 +721,8 @@ body {
     align-items: center;
     color: #fff;
     font-size: 35px;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .left {
