@@ -154,11 +154,12 @@ footer {
     font-size: 23px;
     line-height: 30px;
     margin-top: 0;
+    padding: 15px;
     
 }
 
 .about {
-    width: 40.1%;
+    width: 44%;
     margin: 3%;
     display: flex;
     float: left;
@@ -242,8 +243,8 @@ footer {
 }
 
 .why {
-    width: 22%;
-    padding-left: 2%;
+    width: 23%;
+    margin: 1%;
     display: flex;
     float: left;
     justify-content: center;
@@ -476,7 +477,8 @@ footer {
         display: block;
         pointer-events: none;
         height: 490px;
-        width: 100%;
+        width: 90%;
+        margin: 4%;
         border: 0px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 20px;
     }
@@ -500,6 +502,7 @@ footer {
     .descripcion img
     {
         width: 100%;
+        padding: 25px;
     }
     .why {
         width: 50%;
