@@ -754,7 +754,6 @@ hr {
     right: 0;
     top: 0;
     bottom: 0;
-<<<<<<< HEAD
     height: 650px;
 }
 
@@ -762,12 +761,6 @@ hr {
 /* Slider */
 
 .slider {
-=======
-    height: 580px;
-  }
-  /* Slider */
-  .slider {
->>>>>>> 1681222920002e18bfb59e3d570c7e4c4a915d23
     width: 100%;
     height: 100%;
     background: red;
