@@ -33,6 +33,8 @@ body {
 header {
     width: 100%;
     margin: 0;
+    position: fixed;
+    z-index: 100;
 }
 
 header nav {
