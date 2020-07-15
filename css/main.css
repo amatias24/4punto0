@@ -153,6 +153,7 @@ footer {
     font-size: 23px;
     line-height: 30px;
     margin-top: 0;
+    
 }
 
 .about {
@@ -223,16 +224,12 @@ footer {
 }
 
 .descripcion {
-    width: 45%;
+    width: 50%;
     padding-left: 2%;
-    display: block;
     float: left;
     justify-content: center;
 }
 
-.descripcion img {
-    width: 400px;
-}
 
 #valor {
     background-image: url(../img/bg-val.jpg);
@@ -386,11 +383,13 @@ footer {
 .customer-logos
 {
     width: 100%;
+    margin: 0;
 }
 
 .clientes
 {
     width: 100%;
+    margin: 0;
 }
 .clientes h1
 {
@@ -399,6 +398,11 @@ footer {
 
 
 @media screen and (max-width:800px) {
+    .descripcion
+    {
+        width: 100%;
+        margin: 0;
+    }
     header {
         padding-bottom: 80px;
     }
@@ -473,7 +477,7 @@ footer {
         display: block;
         pointer-events: none;
         height: 490px;
-        width: 95%;
+        width: 100%;
         border: 0px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 20px;
     }
@@ -494,13 +498,9 @@ footer {
         padding-left: 0;
     }
     .about-section p,
-    .descripcion {
-        padding: 0px;
-    }
-    .descripcion {
+    .descripcion img
+    {
         width: 100%;
-        display: block;
-        justify-content: center;
     }
     .why {
         width: 50%;
