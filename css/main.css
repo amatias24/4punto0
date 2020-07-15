@@ -114,7 +114,7 @@ footer {
     margin-right: 10%;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(0, 113, 189,0.4);
+    background-color: rgba(0, 113, 189, 0.4);
     background-attachment: fixed;
     background-size: cover;
     border-radius: 20px;
@@ -135,7 +135,7 @@ footer {
     margin: 0;
     width: 100%;
     color: white;
-    padding-top:5%;
+    padding-top: 5%;
 }
 
 
@@ -378,24 +378,22 @@ footer {
     margin: 0;
     text-align: center;
 }
-.logo
-{
+
+.logo {
     padding-left: 20px;
 }
-.customer-logos-slider
-{
+
+.customer-logos-slider {
     width: 100%;
 }
 
-.clientes
-{
+.clientes {
     width: 100%;
 }
-.clientes h1
-{
+
+.clientes h1 {
     text-align: center;
 }
-
 
 @media screen and (max-width:800px) {
     header {
@@ -987,7 +985,6 @@ hr {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1
-<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 767px) {
@@ -1004,62 +1001,3 @@ hr {
         padding: 0 15px;
     }
 }
-=======
-  }
-  
-  @media only screen and (max-width: 767px) {
-  .slider h2 {
-    font-size: 20px;
-  }
-  .slider > div {
-    padding: 0 2%
-  }
-  .control label {
-    font-size: 35px;
-  }
-  .slider .button {
-    padding: 0 15px;
-  }
-  }
-  /* ==================================================
- Buttom top
-================================================== */
-#button {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.38);
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    margin: 30px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s;
-    z-index: 1000;
-    
-  }
-  #button:hover {
-    cursor: pointer;
-    background-color: rgb(204, 7, 7);
-  }
-  #button:active {
-    background-color: #555;
-  }
-  #button::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-  }
-  .show{
-    transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-  }
-  
->>>>>>> 5db21e45e1c6fb28c85505cb833b959593dd7bee
