@@ -98,7 +98,7 @@ section p {
 footer {
     width: 100%;
     padding-top: 80px;
-    margin-top: 5%;
+    margin-top: 0%;
     background-color: #0071bd;
     height: auto;
 }
@@ -395,7 +395,103 @@ footer {
 .clientes h1 {
     text-align: center;
 }
+/* ==================================================
+ Contacto formulario
+================================================== */
+.form-container{
+    width: 100%;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    background-image: url(../img/bg-val.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #0071bd;
+    
+}
+.bloqueform{
+    width: 55%;
+    display: flex;
+    background-color:#fff;
+    margin: auto;
+    margin-top: 40px;
+}
+.titleform{
+    display: flexbox;
+}
+.form, .social{
+    width: 50%;
+    display: flex;
+    float: left;
+    margin: 0 auto;
+    padding: 50px;
+}
+.form{
+    padding: 50px;
+}
+.social{
+    display: flex;
+    background-color: #0071bd;
 
+}
+#tel, #fb, #mail{
+    
+    color: #000;
+    font-size: 28px;
+    text-align: center;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+.info{
+    margin: auto;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #0071bd;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
 @media screen and (max-width:800px) {
     .descripcion
     {
@@ -464,7 +560,7 @@ footer {
         margin: 0;
         width: 100%;
     }
-    /* ==================================================
+/* ==================================================
      About responsive
 ================================================== */
     .about-section {
@@ -525,6 +621,7 @@ footer {
     .container-about {
         overflow: visible;
     }
+
     /* ==================================================
  Servicios
 ================================================== */
@@ -724,9 +821,27 @@ footer {
     .columna3 {
         margin-top: 40px;
     }
+    /* ==================================================
+     Formulario contacto responsive
+================================================== */
+.bloqueform{
+    width: 90%;
+    display: block;
+    background-color:#fff;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.titleform{
+    display: flexbox;
+}
+.form, .social{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    float: none;
+}
+
 }
 
 
-/* ==================================================
- SlideShow
-================================================== */
