@@ -155,7 +155,6 @@ footer {
     line-height: 30px;
     margin-top: 0;
     padding: 15px;
-    
 }
 
 .about {
@@ -231,7 +230,6 @@ footer {
     float: left;
     justify-content: center;
 }
-
 
 #valor {
     background-image: url(../img/bg-val.jpg);
@@ -493,8 +491,7 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 @media screen and (max-width:800px) {
-    .descripcion
-    {
+    .descripcion {
         width: 100%;
         margin: 0;
     }
@@ -595,21 +592,20 @@ input[type=text], select, textarea {
         padding-left: 0;
     }
     .about-section p,
-    .descripcion img
-    {
+    .descripcion img {
         width: 100%;
         padding: 0px;
     }
-    .why { 
+    .why {
         width: 50%;
         margin: 0;
         float: left;
         padding-left: 0
     }
-    .container-why{
+    .container-why {
         padding: 0;
     }
-    .container-why h3{
+    .container-why h3 {
         font-size: 20px;
     }
     .container-about {
@@ -656,6 +652,8 @@ input[type=text], select, textarea {
         height: auto;
     }
 }
+
+
 /* ==================================================
      Boton top 
 ================================================== */
@@ -673,15 +671,18 @@ input[type=text], select, textarea {
     right: 10px;
     transition: background-color .3s;
     z-index: 1000;
-  }
-  #button:hover {
+}
+
+#button:hover {
     cursor: pointer;
     background-color: rgba(255, 42, 42, 0.945);
-  }
-  #button:active {
+}
+
+#button:active {
     background-color: rgba(42, 56, 255, 0.6);
-  }
-  #button::after {
+}
+
+#button::after {
     content: "\f077";
     font-family: FontAwesome;
     font-weight: normal;
@@ -689,16 +690,17 @@ input[type=text], select, textarea {
     font-size: 2em;
     line-height: 50px;
     color: #fff;
-  }
-  .show {
-    transition: background-color .3s, 
-      opacity .5s, visibility .5s;
+}
+
+.show {
+    transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
-  }    
+}
+
 
 /* ==================================================
-     footer Dany esto en cual va no lo metiste en ningun media
+     Footer Responsive
 ================================================== */
 
 footer {
@@ -767,7 +769,7 @@ footer {
 }
 
 .row2 {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
 }
 
@@ -778,7 +780,7 @@ footer {
 
 .row2 label {
     margin-left: 20px;
-    max-width: 140px;
+    max-width: 200px;
     margin-top: 10px;
 }
 
