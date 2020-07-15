@@ -388,7 +388,14 @@ footer {
     width: 100%;
 }
 
-
+.clientes
+{
+    width: 100%;
+}
+.clientes h1
+{
+    text-align: center;
+}
 
 
 @media screen and (max-width:800px) {
