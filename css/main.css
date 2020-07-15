@@ -681,14 +681,9 @@ footer {
 /* ==================================================
  SlideShow
 ================================================== */
-
 ul,
 ol {
     list-style: none;
-}
-
-body {
-    font-family: Open sans;
 }
 
 .slideshow {
