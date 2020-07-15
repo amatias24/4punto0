@@ -107,4 +107,7 @@ ul {
     .pagination {
         display: none;
     }
+    .slider .caption {
+        top: 10%;
+    }
 }

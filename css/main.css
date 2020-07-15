@@ -476,7 +476,7 @@ footer {
     .about {
         display: block;
         pointer-events: none;
-        height: 490px;
+        height: 560px;
         width: 90%;
         margin: 4%;
         border: 0px solid rgba(255, 255, 255, 0.1);
@@ -504,10 +504,11 @@ footer {
         width: 100%;
         padding: 25px;
     }
-    .why {
+    .why { 
         width: 50%;
+        margin: 0;
         float: left;
-        padding-left: 0;
+        padding-left: 0
     }
     .container-about {
         height: 550px;
