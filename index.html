@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>4punto0 |</title>
-    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <script src="https://kit.fontawesome.com/f2e5814d6a.js" crossorigin="anonymous"></script>
-        
+
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
 </head>
 
 <body>
-    
+
     <header>
         <div class="menu_bar">
             <a class="bt-menu"><span class="icon-menu"></span><p>Menu</p></a>
         </div>
         <nav>
             <ul>
-                <a href="index.html"><img src="img/logo-white.png" width="70px"  class="logo"></a>
+                <a href="index.html"><img src="img/logo-white.png" width="70px" class="logo"></a>
                 <li><a href="#"><span class="icon-home"></span>Inicio</a></li>
                 <li>
                     <a href="#about"><span class="icon-users"></span>Nosotros</a>
@@ -36,61 +37,50 @@
         </nav>
 
     </header>
-    <div class="css-slider-wrapper">
-        <a id="button"></a>
-        <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
-        <input type="radio" name="slider" class="slide-radio2" id="slider_2">
-        <input type="radio" name="slider" class="slide-radio3" id="slider_3">
-        <input type="radio" name="slider" class="slide-radio4" id="slider_4">
-        <div class="slider-pagination">
-            <label for="slider_1" class="page1"></label>
-            <label for="slider_2" class="page2"></label>
-            <label for="slider_3" class="page3"></label>
-            <label for="slider_4" class="page4"></label>
-        </div>
-        <div class="next control">
-            <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-right"></i></label>
-            <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-right"></i></label>
-            <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-right"></i></label>
-            <label for="slider_4" class="numb4"><i class="fa fa-arrow-circle-right"></i></label>
-        </div>
-        <div class="previous control">
-            <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-left"></i></label>
-            <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-left"></i></label>
-            <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-left"></i></label>
-            <label for="slider_4" class="numb4"><i class="fa fa-arrow-circle-left"></i></label>
-        </div>
-        <div class="slider slide1">
-            <div>
+    <div class="slideshow">
+        <ul class="slider">
+            <li>
+                <img src="img/slide1.jpg" alt="">
+                <section class="caption">
+                    <h1>Bienvenidos</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam unde.</p>
+                </section>
+            </li>
+            <li>
+                <img src="img/2.jpg" alt="">
+                <section class="caption">
+                    <h1>Siguiente</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam unde.</p>
+                </section>
+            </li>
+            <li>
+                <img src="img/3.jpg" alt="">
+                <section class="caption">
+                    <h1>Despues</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam unde.</p>
+                </section>
+            </li>
+            <li>
+                <img src="img/4.jpg" alt="">
+                <section class="caption">
+                    <h1>Fin</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam unde.</p>
+                </section>
+            </li>
+        </ul>
 
-                <h2>Bienvenido </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae incidunt ex nulla non voluptatem quae animi quo voluptates est esse.</p>
-                <a href="#" class="button">Back</a> <a href="#" class="button">Agencia digital 4punto0</a> </div>
+        <ol class="pagination">
+
+        </ol>
+
+        <div class="left">
+            <span class="fa fa-chevron-left"></span>
         </div>
-        <div class="slider slide2">
-            <div>
-                <h2>Bienvenido </h2>
-                <<<<<<< HEAD <a href="#" class="button">Back</a> <a href="#" class="button">Agencia digital 4punto0</a> </div>
-            =======
+
+        <div class="right">
+            <span class="fa fa-chevron-right"></span>
         </div>
-        >>>>>>> 3a097d746eea1941857a4552ea22234a8a94ac9e
-    </div>
-    <div class="slider slide3">
-        <div>
-            <h2>Bienvenido </h2>
-            <<<<<<< HEAD <a href="#" class="button">Back</a> <a href="#" class="button">Agencia digital 4punto0</a> </div>
-        =======
-    </div>
-    >>>>>>> 3a097d746eea1941857a4552ea22234a8a94ac9e
-    </div>
-    <div class="slider slide4">
-        <div>
-            <h2>Bienvenido </h2>
-            <<<<<<< HEAD <a href="#" class="button">Back</a> <a href="#" class="button">Agencia digital 4punto0</a> </div>
-        =======
-    </div>
-    >>>>>>> 3a097d746eea1941857a4552ea22234a8a94ac9e
-    </div>
+
     </div>
     <!-- <section class="principal-image">
         <img src="img/mk.jpg">
@@ -135,7 +125,7 @@
             </div>
 
         </div>
-        
+
     </div>
 
 
@@ -214,21 +204,21 @@
 
     </section>
     -->
-<div class="clientes">
-    <h1> Nuestro Clientes</h1>
-    <section class="customer-logos">
-        <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
-        <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-        <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
-     </section>
+    <div class="clientes">
+        <h1> Nuestro Clientes</h1>
+        <section class="customer-logos">
+            <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+            <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+        </section>
     </div>
-    
+
     <!--<div class="container-image">
         <img src="img/logo4punto0.png">
         <div class="text-image">
@@ -259,7 +249,8 @@
                 </div>
 
                 <div class="columna2">
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F4punto0.mx&tabs=timeline&width=300&height=270&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F4punto0.mx&tabs=timeline&width=300&height=270&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="270"
+                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
 
                 <div class="columna3">
@@ -304,31 +295,31 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/slide.js"></script>
+    <script src="js/slideshow.js"></script>
     <script src="js/carousel.js"></script>
     <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>
     <script>
-
         jQuery(document).ready(function() {
-          
-          var btn = $('#button');
-        
-          $(window).scroll(function() {
-            if ($(window).scrollTop() > 300) {
-              btn.removeClass('show');
-            } else {
-              btn.addClass('show');
-            }
-          });
-        
-          btn.on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({scrollTop:0}, '800');
-          });
-        
+
+            var btn = $('#button');
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                    btn.removeClass('show');
+                } else {
+                    btn.addClass('show');
+                }
+            });
+
+            btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, '800');
+            });
+
         });
-        
-        </script>
+    </script>
 </body>
 
 </html>
