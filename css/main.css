@@ -502,7 +502,7 @@ footer {
     .descripcion img
     {
         width: 100%;
-        padding: 25px;
+        padding: 0px;
     }
     .why { 
         width: 50%;
@@ -512,6 +512,9 @@ footer {
     }
     .container-why{
         padding: 0;
+    }
+    .container-why h3{
+        font-size: 20px;
     }
     .container-about {
         height: 550px;
@@ -556,7 +559,46 @@ footer {
         height: auto;
     }
 }
+/* ==================================================
+     Boton top 
+================================================== */
 
+#button {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    transition: background-color .3s;
+    z-index: 1000;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 42, 42, 0.945);
+  }
+  #button:active {
+    background-color: rgba(42, 56, 255, 0.6);
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  .show {
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+  }    
 
 /* ==================================================
      footer Dany esto en cual va no lo metiste en ningun media
