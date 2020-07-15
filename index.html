@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <title>4punto0 |</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <script src="https://kit.fontawesome.com/f2e5814d6a.js" crossorigin="anonymous"></script>
-
+        
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
 </head>
 
 <body>
+    
     <header>
         <div class="menu_bar">
             <a class="bt-menu"><span class="icon-menu"></span><p>Menu</p></a>
         </div>
         <nav>
             <ul>
-                <img src="img/logo-white.png" width="70px" style="float: right; padding-right: 50px;" class="logo">
+                <a href="index.html"><img src="img/logo-white.png" width="70px"  class="logo"></a>
                 <li><a href="#"><span class="icon-home"></span>Inicio</a></li>
                 <li>
                     <a href="#about"><span class="icon-users"></span>Nosotros</a>
@@ -35,6 +37,7 @@
 
     </header>
     <div class="css-slider-wrapper">
+        <a id="button"></a>
         <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
         <input type="radio" name="slider" class="slide-radio2" id="slider_2">
         <input type="radio" name="slider" class="slide-radio3" id="slider_3">
@@ -132,16 +135,7 @@
             </div>
 
         </div>
-        <div class="about">
-            <div class="val">
-                <img class="imageval" src="img/icon-val.png" alt="valores 4punto0">
-                <div class="container-about">
-                    <h3 style="color: #fff; font-size: 30px; padding-bottom: 20px;">VALORES</h3>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                </div>
-            </div>
-
-        </div>
+        
     </div>
 
 
@@ -184,7 +178,7 @@
             </div>
         </div>
     </div>
-    <!--Servicios-->
+    <!--
     <section class="image-services" id="servicios">
         <div class="image-text">
 
@@ -219,7 +213,39 @@
         </div>
 
     </section>
-    <!---->
+    -->
+<div class="clientes">
+    <h1> Nuestro Clientes</h1>
+    <section class="customer-logos">
+        <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+        <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+     </section>
+    </div>
+    
+    <!--<div class="container-image">
+        <img src="img/logo4punto0.png">
+        <div class="text-image">
+            <h1>4punto0</h1>
+            <p>Es el mejor servicio que pudimos tener</p>
+        </div>
+    </div>
+
+
+    <div class="container-image">
+        <img src="img/logo4punto0.png">
+        <div class="text-image">
+            <h1>4punto0</h1>
+            <p>Es el mejor servicio que pudimos tener</p>
+        </div>
+    </div>
+-->
     <footer>
 
         <div class="container-all">
@@ -233,23 +259,7 @@
                 </div>
 
                 <div class="columna2">
-
-                    <h1>Redes Sociales</h1>
-
-                    <div class="row">
-                        <a href=""><img src="img/facebook.png"></a>
-                        <label>Siguenos en Facebook</label>
-                    </div>
-
-                    <div class="row">
-                        <a href=""><img src="img/twitter.png"></a>
-                        <label>Siguenos en Twitter</label>
-                    </div>
-
-                    <div class="row">
-                        <a href=""><img src="img/instagram.png"></a>
-                        <label>Siguenos en Instagram</label>
-                    </div>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F4punto0.mx&tabs=timeline&width=300&height=270&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
 
                 <div class="columna3">
@@ -295,7 +305,30 @@
     <script src="js/menu.js"></script>
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/slide.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>
+    <script>
 
+        jQuery(document).ready(function() {
+          
+          var btn = $('#button');
+        
+          $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+              btn.removeClass('show');
+            } else {
+              btn.addClass('show');
+            }
+          });
+        
+          btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '800');
+          });
+        
+        });
+        
+        </script>
 </body>
 
 </html>

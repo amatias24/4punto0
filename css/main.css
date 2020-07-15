@@ -41,6 +41,7 @@ header nav {
     width: 100%;
     background: #0071bd;
     z-index: 20;
+    height: 100%;
 }
 
 .menu_bar {
@@ -53,10 +54,12 @@ header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 header nav ul li {
-    float: left;
+    float: right;
+    height: 100%;
 }
 
 header nav ul li a {
@@ -64,6 +67,7 @@ header nav ul li a {
     padding: 20px;
     display: block;
     text-decoration: none;
+    height: 100%;
 }
 
 header nav ul li span {
@@ -105,33 +109,33 @@ footer {
 
 .container-image {
     margin-top: 5%;
-}
-
-.container-image {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-}
-
-.container-image {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-color: rgba(0, 113, 189,0.4);
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 20px;
 }
 
 .container-image img {
-    width: 40%;
+    margin-left: 10%;
+    width: 20%;
     height: auto;
 }
 
 .container-image .text-image {
-    width: 50%;
+    width: 60%;
     margin-left: 10%;
 }
 
 .container-image .text-image * {
     margin: 0;
     width: 100%;
+    color: white;
+    padding-top:5%;
 }
 
 
@@ -152,8 +156,8 @@ footer {
 }
 
 .about {
-    width: 24.3%;
-    margin: 3.2%;
+    width: 40.1%;
+    margin: 3%;
     display: flex;
     float: left;
     justify-content: center;
@@ -374,6 +378,24 @@ footer {
     margin: 0;
     text-align: center;
 }
+.logo
+{
+    padding-left: 20px;
+}
+.customer-logos-slider
+{
+    width: 100%;
+}
+
+.clientes
+{
+    width: 100%;
+}
+.clientes h1
+{
+    text-align: center;
+}
+
 
 @media screen and (max-width:800px) {
     header {
@@ -390,6 +412,7 @@ footer {
     header nav ul li {
         display: block;
         float: none;
+        height: auto;
         border-bottom: 1px solid rgba(255, 255, 255, .3);
     }
     .menu_bar {
@@ -420,9 +443,10 @@ footer {
     }
     .logo {
         width: 50%;
-        align-items: center;
-        position: relative;
         padding-bottom: 20px;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding-left: 0;
     }
     .container-image img {
         width: 100%;
@@ -550,7 +574,7 @@ footer {
 }
 
 .columna1 {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .columna1 h1 {
@@ -963,6 +987,7 @@ hr {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1
+<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 767px) {
@@ -979,3 +1004,62 @@ hr {
         padding: 0 15px;
     }
 }
+=======
+  }
+  
+  @media only screen and (max-width: 767px) {
+  .slider h2 {
+    font-size: 20px;
+  }
+  .slider > div {
+    padding: 0 2%
+  }
+  .control label {
+    font-size: 35px;
+  }
+  .slider .button {
+    padding: 0 15px;
+  }
+  }
+  /* ==================================================
+ Buttom top
+================================================== */
+#button {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.38);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+    
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: rgb(204, 7, 7);
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  .show{
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+>>>>>>> 5db21e45e1c6fb28c85505cb833b959593dd7bee
