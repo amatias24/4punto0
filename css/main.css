@@ -510,6 +510,9 @@ footer {
         float: left;
         padding-left: 0
     }
+    .container-why{
+        padding: 0;
+    }
     .container-about {
         height: 550px;
     }
