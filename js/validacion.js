@@ -28,13 +28,6 @@ $(document).ready(function(){
             $('#mov').css("border-bottom-color", "#d1d1d1")
         }
         
-        // Validado Servicio ==============================
-        if( $('#servicio').val() == '' ){
-            errores += '<p>Seleccione un servicio</p>';
-            $('#servicio').css("border-bottom-color", "#F14B4B")
-        } else{
-            $('#servicio').css("border-bottom-color", "#d1d1d1")
-        }
 
         // Validado Mensaje ==============================
         if( $('#mensaje').val() == '' ){
@@ -42,14 +35,6 @@ $(document).ready(function(){
             $('#mensaje').css("border-bottom-color", "#F14B4B")
         } else{
             $('#mensaje').css("border-bottom-color", "#d1d1d1")
-        }
-        
-        // Validado aviso de privacidad ==============================
-        if( $('#terminos').val() == '' ){
-            errores += '<p>Tiene que aceptar los términos y condiciones</p>';
-            $('#terminos').css("border-bottom-color", "#F14B4B")
-        } else{
-            $('#terminos').css("border-bottom-color", "#d1d1d1")
         }
         
         // ENVIANDO MENSAJE ============================

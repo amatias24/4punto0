@@ -1,7 +1,7 @@
-$(document).on('submit','#contacto', function(event){
+$(document).on('submit','#contactos', function(event){
 	event.preventDefault();
     $.ajax({
-            url: 'php/contacto.php',
+            url: '../php/contacto.php',
             type: 'post',
             dataType: 'json',
             data: $(this).serialize()
