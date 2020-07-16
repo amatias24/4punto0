@@ -20,6 +20,22 @@ $(document).ready(function(){
             $('#email').css("border-bottom-color", "#d1d1d1")
         }
 
+        // Validado telefono ==============================
+        if( $('#mov').val() == '' ){
+            errores += '<p>Ingrese su teléfono</p>';
+            $('#mov').css("border-bottom-color", "#F14B4B")
+        } else{
+            $('#mov').css("border-bottom-color", "#d1d1d1")
+        }
+        
+        // Validado Servicio ==============================
+        if( $('#servicio').val() == '' ){
+            errores += '<p>Seleccione un servicio</p>';
+            $('#servicio').css("border-bottom-color", "#F14B4B")
+        } else{
+            $('#servicio').css("border-bottom-color", "#d1d1d1")
+        }
+
         // Validado Mensaje ==============================
         if( $('#mensaje').val() == '' ){
             errores += '<p>Escriba un mensaje</p>';
@@ -27,7 +43,15 @@ $(document).ready(function(){
         } else{
             $('#mensaje').css("border-bottom-color", "#d1d1d1")
         }
-
+        
+        // Validado aviso de privacidad ==============================
+        if( $('#terminos').val() == '' ){
+            errores += '<p>Tiene que aceptar los términos y condiciones</p>';
+            $('#terminos').css("border-bottom-color", "#F14B4B")
+        } else{
+            $('#terminos').css("border-bottom-color", "#d1d1d1")
+        }
+        
         // ENVIANDO MENSAJE ============================
         if( errores == '' == false){
             var mensajeModal = '<div class="modal_wrap">'+

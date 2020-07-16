@@ -199,20 +199,20 @@
         <h2 style="text-align:center; padding-top: 90px; color: #fff;  font-size: 40px;">Contactanos</h2>
         <div class="bloqueform">
             <div class="form">
-                <form id="contacto" enctype="multipart/form-data">
+                <form id="contacto" enctype="multipart/form-data" method="POST" action="php/contacto.php" >
                     <input type="text" id="nempresa" name="nempresa" class="form-control" placeholder="Nombre de la empresa o negocio" required>
                     <input type="text" id="email" name="email" class="form-control" placeholder="Email">
                     <input type="text" id="mov" name="mov" class="form-control" placeholder="Teléfono">
-                    <!--<select id="servicio" name="servicio" class="form-control">
+                    <select id="servicio" name="servicio" class="form-control">
                         <option selected>Eliga un servicio...</option>
                         <option value="SEM" >SEM</option>
-                        <option value="REDESSOCIALES">REDES SOCIALES</option>
-                        <option value="PAGINAWEB">PÁGINA WEB</option>
-                        <option value="ECOMMERCE">E-COMMERCE</option>
-                      </select>-->
-                    <textarea id="mensaje" name="mensaje" placeholder="Write something.." style="height:80px"></textarea>
+                        <option value="REDES SOCIALES">REDES SOCIALES</option>
+                        <option value="PAGINA WEB">PÁGINA WEB</option>
+                        <option value="E-COMMERCE">E-COMMERCE</option>
+                      </select>
+                    <textarea id="mensajes" name="mensaje" placeholder="Write something.." style="height:80px"></textarea>
 
-                    <!--<input class="form-check" type="checkbox" id="terminos" name="terminos"><label>Acepto terminos y condiciones.</label>-->
+                    <input class="form-check" type="checkbox" id="terminos" name="terminos"><label>Acepto terminos y condiciones.</label>
                     <input id="btnSend" type="submit" value="Enviar">
 
                 </form>
@@ -243,7 +243,7 @@
     </div>
 
     <!--FIN CONTACTO-->
-    <!---->
+    <!--
     <div class="clientes">
         <h1> Nuestro Clientes</h1>
         <section class="customer-logos">
@@ -257,7 +257,7 @@
             <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
             <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
         </section>
-    </div>
+    </div>-->
 
     <!--<div class="container-image">
         <img src="img/logo4punto0.png">
