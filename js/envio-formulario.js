@@ -1,11 +1,12 @@
-function send_form() {
-    var logo = document.getElementsByName("logo");
+$(document).on('submit','#encuesta', function(event){
+	event.preventDefault();
+    /*var logo = document.getElementsByName("logo");
     var sectoredad = document.getElementsByName("sectoredad");
     var slogan = document.getElementsByName("slogan");
     var log;
     var sec;
     var slo;
-    console.log("Aqui");
+    alert("Aqui");
     for (var i = 0; i < logo.length; i++) {
         if (logo[i].type == "radio") {
             if (logo[i].checked == true) {
@@ -33,12 +34,13 @@ function send_form() {
     var email = document.getElementById("email").value;
     var nombre = document.getElementById("nombre").value;
     var actividades = document.getElementById("actividades").value;
-    var file = "cd"; //document.getElementById("file").value;
+    var file = document.getElementById("file").value;
+    alert("File "+file);*/
     $.ajax({
             url: 'php/envio-formulario.php',
             type: 'post',
             dataType: 'json',
-            data: { email: email, nombre: nombre, actividades: actividades, logo: log, sectoredad: sec, slogan: slo, file: file },
+            data: $(this).serialize()
         })
         .done(function(xx) {
             if (xx.res == 1) {
@@ -52,4 +54,5 @@ function send_form() {
         .fail(function(res) {
             console.log(res);
         })
-}
+
+})

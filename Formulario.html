@@ -19,9 +19,9 @@
     <header>
     </header>
     <div class="encuesta-log">
-        <img src="img/logo-white.png" onsubmit="send_form();">
+        <img src="img/logo-white.png" >
     </div>
-    <form class="encuesta" id="encuesta">
+    <form class="encuesta" id="encuesta" enctype="multipart/form-data">
         <label>Correo</label>
         <input type="email" placeholder="Correo Electronico" id="email" required name="email">
         <label>Nombre del negocio o proyecto</label>
@@ -45,7 +45,7 @@
         <input type="file" name="file" id="file" />
         <label for="file" class="btn-upload"><span class="icon-upload3"></span> Subir Archivo</label><label class="t-upload">Maximo de archivo 25MB</label>
         <label></label>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" > 
     </form>
     <footer>
 
