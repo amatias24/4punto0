@@ -42,17 +42,16 @@ $mensaje="
                 $toEmail = 'chucho970407@gmail.com';
 
                 // Sender
-                $from = 'sender@example.com';
-                $fromName = 'CodexWorld';
+                $from = $email;
+                $fromName = 'Encuesta 4punto0.mx';
                 
                 // Subject
-                $emailSubject = 'Contact Request Submitted by '.$name;
+                $emailSubject = 'Formulario contestado por '.$name;
                 
                 // Message 
-                $htmlContent = '<h2>Contact Request Submitted</h2>
-                    <p><b>Name:</b> '.$name.'</p>
+                $htmlContent = '<h2>Respuestas Formulario</h2>
+                    <p><b>Empresa:</b> '.$name.'</p>
                     <p><b>Email:</b> '.$email.'</p>
-                    <p><b>Subject:</b> '.$subject.'</p>
                     <p><b>Message:</b><br/>'.$message.'</p>';
                 
                 // Header for sender info
