@@ -214,7 +214,15 @@
                     <input type="text" id="nempresa" name="nempresa" class="form-control" placeholder="Nombre de la empresa o negocio" required >
                     <input type="text" id="email" name="email" class="form-control" placeholder="Email">
                     <input type="text" id="mov" name="mov" class="form-control" placeholder="Teléfono">
-                    
+                    <select id="servicio" name="servicio" class="form-control">
+                        <option selected>Eliga un servicio...</option>
+                        <option value="SEM" >SEM</option>
+                        <option value="REDESSOCIALES">REDES SOCIALES</option>
+                        <option value="PAGINAWEB">PÁGINA WEB</option>
+                        <option value="ECOMMERCE">E-COMMERCE</option>
+                      </select>
+                    <textarea id="mensaje" name="mensaje" placeholder="Write something.." style="height:80px"></textarea>
+                      
                     <input class="form-check" type="checkbox" id="terminos" name="terminos"><label>Acepto terminos y condiciones.</label>
                     <input type="submit" value="Enviar">
 
