@@ -25,7 +25,7 @@
 
         // Mensaje enviado
         echo "<script>alert('Mensaje enviado, muchas gracias.');
-        window.location.href = 'http://4punto0.mx/contacto';</script>";
+        window.location.href = 'http://4punto0.mx/formulario/';</script>";
     } else {
         echo "<script>alert('Debe acertar las condiciones de uso y privacidad');
         location.href ='javascript:history.back()';</script>";
