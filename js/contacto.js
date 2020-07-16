@@ -8,10 +8,8 @@ $(document).on('submit','#contacto', function(event){
         })
         .done(function(xx) {
             if (xx.res == 1) {
-                //window.location='Doctor/';
                 alert("Correo Enviado");
             } else if (xx.res == 1) {
-                //window.location='Doctor/';
                 alert("Correo No Enviado");
             }
         })

@@ -1,17 +1,26 @@
 <?php 
 if(isset($_POST['submit'])){
     if(isset($_POST['terminos'])) {
-        $to = "armandomm@live.com.mx"; // Tu email
-        $name = $_POST['nempresa'];
-        $email = $_POST['email'];
-        $mov = $_POST['mov'];
-        $subject = "Contacto desde la web";
-        $message = $name . " escribió lo siguiente:" . "\n\n" . $_POST['message'];
 
-        $headers = "From:" . $email;
-        mail($to,$subject,$message,$headers);
-        echo "Mensaje enviado. Gracias " . $name . ", me pondré en contacto lo antes posible.";
-    } else {
+        // Llamando a los campos
+        $nombre = $_POST['nempresa'];
+        $correo = $_POST['email'];
+        $telefono = $_POST['mov'];
+        $mensaje = $_POST['mensaje'];
+
+        // Datos para el correo
+        $destinatario = "amatias2401@gmail.com";
+        $asunto = "Contacto desde nuestra web";
+
+        $carta = "De: $nombre \n";
+        $carta .= "Correo: $correo \n";
+        $carta .= "Telefono: $telefono \n";
+        $carta .= "Mensaje: $mensaje";
+
+        // Enviando Mensaje
+        mail($destinatario, $asunto, $carta);
+        header('Location:index.html');
+        } else {
         echo 'Debe acertar las condiciones de uso y privacidad';
     }
 }
