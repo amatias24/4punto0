@@ -24,6 +24,14 @@ $mensaje="
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
   
+    if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
+        echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
+        $uploadedFile = $target_file;
+        echo "<br>$uploadedFile";
+      } else {
+        echo "Sorry, there was an error uploading your file.";
+      }    
+            
                 // Recipient
                 $toEmail = 'chucho970407@gmail.com';
                 // Sender
@@ -40,56 +48,48 @@ $mensaje="
                 // Header for sender info
                 $headers = "From: $fromName"." <".$from.">";
 
-    if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
-        echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded.";
-
-        $uploadedFile = $target_file;
-        echo "<br>".$uploadedFile;
-            // Boundary 
-            $semi_rand = md5(time()); 
-            $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x"; 
-            
-            // Headers for attachment 
-            $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\""; 
-            
-            // Multipart boundary 
-            $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
-            "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n"; 
-            
-            // Preparing attachment
-            if(is_file($uploadedFile)){
-                $message .= "--{$mime_boundary}\n";
-                $fp =    @fopen($uploadedFile,"rb");
-                $data =  @fread($fp,filesize($uploadedFile));
-                @fclose($fp);
-                $data = chunk_split(base64_encode($data));
-                $message .= "Content-Type: application/octet-stream; name=\"".basename($uploadedFile)."\"\n" . 
-                "Content-Description: ".basename($uploadedFile)."\n" .
-                "Content-Disposition: attachment;\n" . " filename=\"".basename($uploadedFile)."\"; size=".filesize($uploadedFile).";\n" . 
-                "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
-            }
-            
-            $message .= "--{$mime_boundary}--";
-            $returnpath = "-f" . $email;
-            echo 'aqui estamos bien';
-            // Send email
-            $mail = mail($toEmail, $emailSubject, $message, $headers, $returnpath);
-            
-            @unlink($uploadedFile);
-            // Delete attachment file from the server
-        
-      } else {
-            // Set content-type header for sending HTML email
-           $headers .= "\r\n". "MIME-Version: 1.0";
-           $headers .= "\r\n". "Content-type:text/html;charset=UTF-8";
-           echo'fallo';
-           // Send email
-           $mail = mail($toEmail, $emailSubject, $htmlContent, $headers); 
-       
-      }    
-            
-
-
+                if(!empty($uploadedFile) && file_exists($uploadedFile)){
+                    
+                    // Boundary 
+                    $semi_rand = md5(time()); 
+                    $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x"; 
+                    
+                    // Headers for attachment 
+                    $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\""; 
+                    
+                    // Multipart boundary 
+                    $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+                    "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n"; 
+                    
+                    // Preparing attachment
+                    if(is_file($uploadedFile)){
+                        $message .= "--{$mime_boundary}\n";
+                        $fp =    @fopen($uploadedFile,"rb");
+                        $data =  @fread($fp,filesize($uploadedFile));
+                        @fclose($fp);
+                        $data = chunk_split(base64_encode($data));
+                        $message .= "Content-Type: application/octet-stream; name=\"".basename($uploadedFile)."\"\n" . 
+                        "Content-Description: ".basename($uploadedFile)."\n" .
+                        "Content-Disposition: attachment;\n" . " filename=\"".basename($uploadedFile)."\"; size=".filesize($uploadedFile).";\n" . 
+                        "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+                    }
+                    
+                    $message .= "--{$mime_boundary}--";
+                    $returnpath = "-f" . $email;
+                    echo 'aqui estamos bien';
+                    // Send email
+                    $mail = mail($toEmail, $emailSubject, $message, $headers, $returnpath);
+                    
+                    @unlink($uploadedFile);
+                    // Delete attachment file from the server
+                }else{
+                     // Set content-type header for sending HTML email
+                    $headers .= "\r\n". "MIME-Version: 1.0";
+                    $headers .= "\r\n". "Content-type:text/html;charset=UTF-8";
+                    echo'fallo';
+                    // Send email
+                    $mail = mail($toEmail, $emailSubject, $htmlContent, $headers); 
+                }
                 
             
 ?>
