@@ -1,6 +1,6 @@
-$(document).on('submit','#encuesta', function(event){
+/*$(document).on('submit','#encuesta', function(event){
 	event.preventDefault();
-    /*var logo = document.getElementsByName("logo");
+    var logo = document.getElementsByName("logo");
     var sectoredad = document.getElementsByName("sectoredad");
     var slogan = document.getElementsByName("slogan");
     var log;
@@ -35,7 +35,7 @@ $(document).on('submit','#encuesta', function(event){
     var nombre = document.getElementById("nombre").value;
     var actividades = document.getElementById("actividades").value;
     var file = document.getElementById("file").value;
-    alert("File "+file);*/
+    alert("File "+file);
     $.ajax({
             url: 'php/envio-formulario.php',
             type: 'post',
@@ -55,4 +55,4 @@ $(document).on('submit','#encuesta', function(event){
             console.log(res);
         })
 
-})
+})*/

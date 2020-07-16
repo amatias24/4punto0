@@ -22,7 +22,7 @@ $mensaje="
             if(!empty($_FILES["file"]["name"])){
                 
                 // File path config
-                $targetDir = "uploads/";
+                $targetDir = "../uploads/";
                 $fileName = basename($_FILES["file"]["name"]);
                 $targetFilePath = $targetDir . $fileName;
                 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
@@ -35,19 +35,14 @@ $mensaje="
                         $uploadedFile = $targetFilePath;
                     }
                 }
-            }
-            
-                
+            }           
                 // Recipient
                 $toEmail = 'chucho970407@gmail.com';
-
                 // Sender
                 $from = $email;
-                $fromName = 'Encuesta 4punto0.mx';
-                
+                $fromName = 'Encuesta 4punto0.mx';              
                 // Subject
-                $emailSubject = 'Formulario contestado por '.$name;
-                
+                $emailSubject = 'Formulario contestado por '.$name;              
                 // Message 
                 $htmlContent = '<h2>Respuestas Formulario</h2>
                     <p><b>Empresa:</b> '.$name.'</p>
