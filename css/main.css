@@ -387,11 +387,17 @@ footer {
 }
 
 .container-services div img {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: auto;
+    padding-bottom: 5%;
+    transition: width 2s, height 4s;
+}
+.container-services div:hover img {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-    height: auto;
-    padding-bottom: 5%;
 }
 
 .container-services div h1 {
@@ -405,7 +411,8 @@ footer {
 }
 
 .logo {
-    padding-left: 20px;
+	padding-left: 20px;
+	padding-bottom: 0;
 }
 
 .customer-logos-slider {
@@ -515,7 +522,34 @@ input[type=text], select, textarea {
     background-color: #f2f2f2;
     padding: 20px;
   }
+
+
+  .test {
+	width: 10%;
+	height: 100%;
+	transition: width 2s, height 4s;
+  }
+  
+  .test:hover {
+	width: 300px;
+  }
+
+  a:link, a:visited {
+	color: white!important;
+	text-align: center!important;
+	text-decoration: none!important;
+  }
+  
+  a:hover, a:active {
+	  text-decoration: none!important;
+	  color: white!important;
+  }
 @media screen and (max-width:800px) {
+    .test {
+        width: 100%;
+        height: auto;
+        transition: width 2s, height 4s;
+      }
     .descripcion {
         width: 100%;
         margin: 0;
@@ -674,6 +708,12 @@ input[type=text], select, textarea {
         width: 40%;
         margin-left: 30%;
         margin-right: 30%;
+        height: auto;
+    }
+    .container-services div:hover img {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
         height: auto;
     }
 }
