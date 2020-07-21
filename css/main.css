@@ -536,7 +536,7 @@ input[type=text], select, textarea {
 
   a:link, a:visited {
 	color: white!important;
-	text-align: center!important;
+	text-align: center;
 	text-decoration: none!important;
   }
   
@@ -545,6 +545,9 @@ input[type=text], select, textarea {
 	  color: white!important;
   }
 @media screen and (max-width:800px) {
+    a:link, a:visited {
+        text-align: left;
+      }
     .test {
         width: 100%;
         height: auto;
